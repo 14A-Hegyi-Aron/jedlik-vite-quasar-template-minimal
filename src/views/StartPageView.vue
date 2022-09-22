@@ -3,6 +3,7 @@
   const state = reactive({
     evfolyam: 14,
     gombSzine: "primary",
+    text: "Jedlik",
   });
 
   function osztaly_valtoztato() {
@@ -43,6 +44,15 @@
       no-caps
       @:click="evfolyam_valtoztato()"
     />
+    <q-input
+      v-model="state.text"
+      clearable
+      hint="Írj be valamit"
+      label="Standard"
+      loading
+      :rules="[(val) => val.length <= 3 || 'Max 3 karakter']"
+    />
+    <h1>{{ state.text }}</h1>
   </q-page>
 </template>
 
