@@ -1,4 +1,13 @@
 # `Vue 3.x + Quasar 2.x template with Vite`
+[![Badge](https://img.shields.io/github/package-json/dependency-version/14A-Hegyi-Aron/jedlik-vite-quasar-template-minimal/dev/typescript?color=%233178C6&label=typescript&style=for-the-badge)](https://www.typescriptlang.org/)
+[![Badge](https://img.shields.io/github/package-json/dependency-version/14A-Hegyi-Aron/jedlik-vite-quasar-template-minimal/dev/vue-tsc?color=%2342b883&label=vue&style=for-the-badge)](https://vuejs.org/)
+[![Badge](https://img.shields.io/github/package-json/dependency-version/14A-Hegyi-Aron/jedlik-vite-quasar-template-minimal/dev/@types/node?color=%23026e00&label=node&style=for-the-badge)](https://nodejs.org/en/)
+[![Badge](https://img.shields.io/github/package-json/dependency-version/14A-Hegyi-Aron/jedlik-vite-quasar-template-minimal/dev/vite?color=%23646cff&label=vite&style=for-the-badge)](https://vitejs.dev/)
+[![Badge](https://img.shields.io/github/package-json/dependency-version/14A-Hegyi-Aron/jedlik-vite-quasar-template-minimal/dev/@quasar/vite-plugin?color=%2331CCEC&label=quasar&style=for-the-badge)](https://quasar.dev/)
+
+
+
+[![Badge]()]()
 
 # Take Over Mode
 To get Vue SFCs and TypeScript working together, Volar creates a separate TS language service instance patched with Vue-specific support, and uses it in Vue SFCs. At the same time, plain TS files are still handled by VSCode's built-in TS language service, which is why we need TypeScript Vue Plugin to support Vue SFC imports in TS files. This default setup works, but for each project we are running two TS language service instances: one from Volar, one from VSCode's built-in service. This is a bit inefficient and can lead to performance issues in large projects.
