@@ -15,9 +15,8 @@
 </script>
 
 <template>
-  <div class="row window-height flex-center justify-evenly">
-    <p>{{ anyLoggedUser }}</p>
-    <q-page>
+  <q-page>
+    <div class="row window-height flex-center justify-evenly">
       <q-btn
         class="shadow-10"
         color="info"
@@ -31,9 +30,15 @@
         :label="anyLoggedUser ? 'Logout from Google' : 'Login with Google'"
         no-caps
       />
-    </q-page>
-    <login-dialog v-model:show="r.showDialog" email="vmi@vmi.eu" password="vmi" />
-  </div>
+      <login-dialog
+        v-model:show="r.showDialog"
+        email="vmi@vmi.eu"
+        password="vmi"
+        :show-dialog="r.showDialog"
+        @close-login-dialog="r.showDialog = false"
+      />
+    </div>
+  </q-page>
 </template>
 
 <style lang="scss" scoped></style>

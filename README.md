@@ -6,9 +6,6 @@
 [![Badge](https://img.shields.io/github/package-json/dependency-version/14A-Hegyi-Aron/jedlik-vite-quasar-template-minimal/dev/@quasar/vite-plugin?color=%2331CCEC&label=quasar&style=for-the-badge)](https://quasar.dev/)
 
 
-
-[![Badge]()]()
-
 # Take Over Mode
 To get Vue SFCs and TypeScript working together, Volar creates a separate TS language service instance patched with Vue-specific support, and uses it in Vue SFCs. At the same time, plain TS files are still handled by VSCode's built-in TS language service, which is why we need TypeScript Vue Plugin to support Vue SFC imports in TS files. This default setup works, but for each project we are running two TS language service instances: one from Volar, one from VSCode's built-in service. This is a bit inefficient and can lead to performance issues in large projects.
 
